@@ -3,7 +3,7 @@ My goal for this assignment was to lay a foundation that could easily be built u
 
 ## Setup and Running Instructions
 1. This project was developed using `npm` v9.3.1 and `node` v19.5.0 installed. The `node` download found [here](https://nodejs.org/en/download) comes with `npm` 
-1. Clone the repo: `repo link here`
+1. Clone the repo: `git clone https://github.com/jpwinz91/henrymeds-api.git`
 1. In a terminal, navigate to the root direction of the repo and run `npm install` to install package dependencies
 1. The service can be started with `npm run start` which will kick of the start script
 1. The default domain URL/port will be `http://localhost:5001/` (5001 is the default port that can be changed to your favorite port in `/src/config.json`)
