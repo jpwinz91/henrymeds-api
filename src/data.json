@@ -1,0 +1,22 @@
+{
+    "Appointments": {},
+    "Providers": {
+        "p1": {
+            "name": "Dr Jekyll",
+            "availability": {}
+        },
+        "p2": {
+            "name": "Dr Octopus",
+            "availability": {}
+        },
+        "p3": {
+            "name": "Dr Pepper",
+            "availability": {}
+        }
+    },
+    "Clients": {
+        "c1": {
+            "name": "Joe"
+        }
+    }
+}

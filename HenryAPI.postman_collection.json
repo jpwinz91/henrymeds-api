@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "951cb895-1405-4f22-b0b5-e15eb4e628f1",
+		"name": "Henry API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5001864"
+	},
+	"item": [
+		{
+			"name": "Get Availability",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/providers/availability/p1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"providers",
+						"availability",
+						"p1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post New Appointment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"providerId\": \"p1\",\r\n    \"clientId\": \"c1\",\r\n    \"date\": \"2024-03-29\",\r\n    \"timeSlot\": \"08:15:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/appointments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirm Appointment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"confirmationNumber\": \"96c934c4-598a-44af-ad42-1500f9b1e5c4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/appointments/confirm",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"appointments",
+						"confirm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Provider Availability",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"p1\",\r\n    \"availability\": [\r\n        {\r\n            \"date\": \"2024-03-29\",\r\n            \"startTime\": \"08:00:00\",\r\n            \"endTime\": \"15:00:00\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/providers/availability",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"providers",
+						"availability"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
