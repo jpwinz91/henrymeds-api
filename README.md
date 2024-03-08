@@ -18,6 +18,7 @@ There were things I omitted to stay within the time constraints. Several improve
 - There isn't any authentication to the API so anyone could call the endpoints if they knew the domain.
 - The database is a simple, local json file. This is not scalable. Speaking of scalability, the API is synchronous so a high volume of requests would be processed one by one in the order they are received. 
 - While writing this out I realized I don't validate for booking appointments in the past so that's something that could be fixed to improve the user experience of this API as well.
+- Leverage my source control better! I did not commit early, or often. I worked locally until it was ready. I think seeing my commits and progress would've been valuable. 
 
 ## Endpoints
 ### GET `/providers/availability/:prodviderId`
